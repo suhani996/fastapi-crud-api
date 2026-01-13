@@ -90,5 +90,5 @@ Pydantic
 
 Uvicorn
 
-👩‍💻 Author
+👩‍💻 Author :
 Suhani Pendyala
