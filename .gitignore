@@ -1,0 +1,7 @@
+__pycache__
+venv/
+.env
+*.db
+docker-compose.yml
+Dockerfile
+Makefile1
