@@ -1,27 +1,94 @@
-# Build a CRUD App with FastAPI and SQLAlchemy
+# FastAPI CRUD API
+## 📌 Project Overview
 
-In this article, I'll provide you with a simple and straightforward guide on how you can build a CRUD app with FastAPI and SQLAlchemy. The FastAPI app will run on a Starlette web server, use Pydantic for data validation, and store data in an SQLite database.
+This project implements a basic CRUD API for managing notes using FastAPI and SQLAlchemy.  
+It follows a clean project structure and demonstrates backend development best practices.
 
-![Build a CRUD App with FastAPI and SQLAlchemy](https://codevoweb.com/wp-content/uploads/2022/11/Build-a-CRUD-App-with-FastAPI-and-SQLAlchemy.png)
+---
 
-## Topics Covered
+## 🚀 Features
 
-- Run the SQLAlchemy FastAPI App Locally
-- Run the Frontend App Locally
-- Setup FastAPI and Run the HTTP Server
-- Designing the CRUD API
-- Setup SQLAlchemy with SQLite
-- Setup SQLAlchemy with PostgreSQL
-- Create Database Model with SQLAlchemy
-  - Database Model for SQLite Database
-  - Database Model for Postgres Database
-- Create Validation Schemas with Pydantic
-- Define the Path Operation Functions
-  - Get All Records
-  - Create a Record
-  - Update a Record
-  - Retrieve a Single Record
-  - Delete a Single Record
-- Connect the API Router to the App
+- FastAPI for high-performance APIs
+- SQLAlchemy ORM for database operations
+- SQLite database (easy local setup)
+- Pydantic schemas for data validation
+- Automatic API documentation (Swagger & ReDoc)
 
-Read the entire article here: [https://codevoweb.com/build-a-crud-app-with-fastapi-and-sqlalchemy](https://codevoweb.com/build-a-crud-app-with-fastapi-and-sqlalchemy)
+---
+
+## 📁 Project Structure
+
+```
+fastapi-crud-api/
+│
+├── app/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── config.py
+│   ├── database.py
+│   ├── models.py
+│   ├── schemas.py
+│   └── note.py
+│
+├── requirements.txt
+├── example.env
+├── README.md
+└── .gitignore
+```
+
+
+---
+## ⚙️ Installation
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/suhani996/fastapi-crud-api.git
+cd fastapi-crud-api
+```
+2️⃣ Create a virtual environment (optional but recommended)
+```bash
+python -m venv venv
+source venv/bin/activate   # On Windows: venv\Scripts\activate
+```
+3️⃣ Install dependencies
+```bash
+pip install -r requirements.txt
+```
+▶️ Run the Application
+```bash
+uvicorn app.main:app --reload
+```
+Server will start at:
+http://127.0.0.1:8000
+
+📘 API Documentation
+Swagger UI → http://127.0.0.1:8000/docs
+
+ReDoc → http://127.0.0.1:8000/redoc
+
+🛠️ CRUD Operations
+Create a record
+
+Read all records
+
+Read a single record by ID
+
+Update a record
+
+Delete a record
+
+🧪 Technologies Used
+Python 3
+
+FastAPI
+
+SQLAlchemy
+
+SQLite
+
+Pydantic
+
+Uvicorn
+
+👩‍💻 Author
+Suhani Pendyala
